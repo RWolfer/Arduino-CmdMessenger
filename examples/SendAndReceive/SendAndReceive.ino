@@ -5,6 +5,11 @@
 // - Handle received commands that do not have a function attached
 // - Send a command with a parameter to the PC
 
+
+#define MAXCALLBACKS        5   // The maximum number of commands   (default: 50)
+#define MESSENGERBUFFERSIZE 100   // The length of the commandbuffer  (default: 64)
+#define MAXSTREAMBUFFERSIZE 100  // The length of the streambuffer   (default: 512)
+#define DEFAULT_TIMEOUT     5000 // Time out on unanswered messages. (default: 5s)
 #include <CmdMessenger.h>  // CmdMessenger
 
 // Blinking led variables 
